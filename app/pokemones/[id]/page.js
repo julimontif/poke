@@ -10,7 +10,7 @@ async function PokemonPage({ params }) {
     return (
         <div>
             <h1>{data.name} numero #{data.id}</h1>
-            <Image src={data.sprites.front_default} width={400} height={400} />
+            <Image src={data.sprites.front_default} width={400} height={400} alt="" />
             <Link href="/">Volver al inicio</Link>
         </div>
     );
