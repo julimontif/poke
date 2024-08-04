@@ -15,7 +15,7 @@ export default async function Pokemones() {
 
   return (
     <div>
-      <h1>Pokemones</h1>
+      <h1>Mi App de Pokemones</h1>
       <ul>
         {pokemones.map(pokemon => (
           <Pokemon pokemon={pokemon} key={pokemon.name} />
