@@ -8,10 +8,7 @@ const Pokemon = ({pokemon}) => {
 }
 
 
-export default async function Pokemones() {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
-  const data = await response.json();
-  const pokemones = data.results;
+const Pokemones = ({ pokemones }) => {
 
   return (
     <div>
@@ -24,3 +21,5 @@ export default async function Pokemones() {
     </div>
   );
 }
+
+export default Pokemones
